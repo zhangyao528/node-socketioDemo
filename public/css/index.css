@@ -1,0 +1,221 @@
+body{
+    background: #ccc;
+    box-sizing: border-box;
+}
+.login_box{
+    width: 500px;
+    margin: 100px auto;
+    background: #fff;
+    padding: 20px;
+}
+
+.login_box>input{
+    height: 24px;
+    width: 100%;
+}
+
+.login_box>button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background: green;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.avatar_ul{
+    height: 40px;
+    list-style:none
+}
+
+.avatar_ul>li{
+    float: left;
+    height: 46px;
+    margin-right: 20px;
+}
+
+.avatar_ul>li>img{
+    width: auto;
+    height: 40px;
+    padding: 3px;
+}
+
+.now{
+    border: 1px solid green;
+}
+
+.container{
+    display: flex;
+    height: calc(100vh - 30px);
+    background: #dcd9d9;
+}
+
+.user-list{
+    width: 35%;
+    padding-right: 10px;
+    background: #666;
+}
+
+.header{
+    height: 50px;
+    padding: 5px;
+    display: flex;
+}
+
+.info{
+    margin-left: 10px;
+}
+
+.userlist-box{
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #c7bfbf;
+    border-left: none;
+    border-right: none;
+    font-size: 16px;
+}
+
+.userlist-container{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.userlist-container > li{
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    height: 100%;
+}
+
+.avatar img{
+    height: 100%;
+}
+
+.name{
+    margin-left: 10px;
+}
+
+.box{
+    width: 65%;
+    padding-left: 10px;
+}
+
+.userCountTitle{
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.message_system{
+    color: #a2a0a0;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+.box-hd{
+
+}
+
+.box-bd{
+    height: calc(100vh - 228px);
+    border-bottom: 1px solid #666;
+    overflow-y: auto;
+}
+
+.imgMessage{
+    height: 50px;
+}
+
+.my{
+    text-align: right;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.my .imgMessage{
+    float: right;
+}
+
+.my .content{
+    background: #7cca7c;
+}
+
+.other{
+    text-align: left;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.other .imgMessage{
+    float: left;
+}
+
+.my .content .bubble,.other .content .bubble{
+    padding: 0 8px;
+    border-radius: 3px;
+    word-break: break-word;
+    text-align: left;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.my .content,.other .content{
+    max-width: calc(100% - 100px);
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 20px;
+}
+
+.other .content .bubble{
+    background: #fff;
+}
+
+.nickname{
+    display: inline-block;
+}
+
+.textarea-box{
+    width: calc(100% - 10px);
+    background: #dcd9d9;
+    height: calc(100vh - 840px);
+    border: none;
+    resize: none;
+}
+
+.desc{
+    color: #807d7d;
+    font-size: 12px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.action{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.file{
+    position: relative;
+}
+
+.file label{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.fileImage{
+    max-width: 100%;
+}

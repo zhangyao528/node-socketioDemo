@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聊天室</title>
+    <link rel="stylesheet" href="lib/jquery-mCustomScrollbar/css/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="lib/jquery-emoji/css/jquery.emoji.css"/>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="login_box" style="display: block;">
+        <h3 style="text-align: center;">用户登陆</h3>
+        <p>用户名</p>
+        <input type="text" placeholder="请输入用户名" id="username">
+        <p>选择头像</p>
+        <ul class="avatar_ul" id="login_avatar">
+            <li><img src="images/avatar01.jpg" alt=""></li>
+            <li><img src="images/avatar02.jpg" alt=""></li>
+            <li><img src="images/avatar03.jpg" alt=""></li>
+        </ul>
+        <button class="weui-btn" id="loginBtn">登陆</button>
+    </div>
+
+    <div class="container" style="display: none;">
+        <div class="user-list">
+            <div class="header">
+                <div class="avatar">
+                    <img class="img avatar_url" src="" alt="">
+                </div>
+                <div class="info">
+                    <h3 class="username"></h3>
+                </div>
+            </div>
+            <div class="title">
+                <h3 class="userlist-box">用户列表</h3>
+            </div>
+            <ul class="userlist-container"></ul>
+        </div>
+        <!-- 聊天主窗口 -->
+        <div class="box">
+            <div class="box-hd">
+                <h3 class="userCountTitle">聊天室(<span id="userCount"></span>)</h3>
+            </div>
+            <!-- 聊天内容 -->
+            <div class="box-bd">
+
+            </div>
+
+            <!-- 聊天窗口底部区域 -->
+            <div class="box-ft">
+                <!-- 工具栏 -->
+                <div class="toolbar">
+                    <a href="javascript:;" title="表情" class="face" id="face2">表情</a>
+                    <a href="javascript:;" title="截屏" class="screen-cut">截屏</a>
+                    <a href="javascript:;" title="图片" class="file">
+                        图片
+                        <label for="file"></label>
+                        <input type="file" id="file" style="display: none;">
+                    </a>
+                </div>
+                <!-- 内容输入区域 -->
+                <div class="content">
+                    <div class="text textarea-box" id="content" contenteditable></div>
+                </div>
+                <!-- 发送按钮 -->
+                <div class="action">
+                    <span class="desc">按下ctrl+enter发送</span>
+                    <button class="btn-send" id="btn-send">发送</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="lib/jquery-mCustomScrollbar/js/jquery.mousewheel-3.0.6.min.js"></script>
+    <script src="lib/jquery-mCustomScrollbar/js/jquery.mCustomScrollbar.min.js"></script>
+    <script src="lib/jquery-emoji/js/jquery.emoji.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
